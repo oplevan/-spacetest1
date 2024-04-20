@@ -3,7 +3,7 @@
 ## Instructions
 
 1. Render the cheapest 5 items on landing sorted by price
-2. User should beable to toggle between showing the cheapest 5 items and all items
+2. User should be able to toggle between showing the cheapest 5 items and all items
 3. The user should be able to filter an item by name
 4. Javascript or Typescript using functional components must be used to implement your solution
 5. The answer must be a full github public repo that can be cloned then installed and run by executing 'npm start' or 'yarn start'
