@@ -56,7 +56,7 @@ const generateItems = () => {
   const items = [];
   for (let i = 1; i <= TOTAL_ITEMS; i++) {
     const randomCar = CAR_BRANDS[Math.floor(Math.random() * CAR_BRANDS.length)];
-    items.push({ id: i, name: `${randomCar} ${i}`, price: Math.floor(Math.random() * 1000) + 1 });
+    items.push({ id: i, name: `${randomCar} ${i}`, price: Math.floor(Math.random() * 1000) + 1500 });
   }
   return items;
 };

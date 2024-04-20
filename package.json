@@ -7,11 +7,12 @@
     "concurrently": "^8.2.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "server": "npm start --prefix server",
+    "client": "npm start --prefix client",
     "server-dependencies": "npm i --prefix server",
-    "install-all": "npm i && concurrently \"npm run server-dependencies\"",
-    "start": "concurrently \"npm run server\""
+    "client-dependencies": "npm i --prefix client",
+    "install-all": "npm i && concurrently \"npm run server-dependencies\" concurrently \"npm run client-dependencies\"",
+    "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
