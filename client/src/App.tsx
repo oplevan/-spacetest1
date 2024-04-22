@@ -1,12 +1,23 @@
-import ItemList from "./components/item-list";
+import ProductList from "./components/product-list";
+import Filters from "./components/filters";
+import Header from "./components/header";
+import { SplitScreen, SplitScreenLeft, SplitScreenRight } from "./components/layout/split-screen";
+import { FiltersProvider } from "./context/filters-context";
 
 function App() {
   return (
     <div className="w-full min-h-screen">
-      <div className="container">
-        <h1 className="uppercase text-xl my-10 text-center">Technical Test for Space</h1>
-        <ItemList />
-      </div>
+      <Header />
+      <FiltersProvider>
+        <SplitScreen leftWidth={1} rightWidth={3} className="gap-8 py-4">
+          <SplitScreenLeft>
+            <Filters />
+          </SplitScreenLeft>
+          <SplitScreenRight>
+            <ProductList />
+          </SplitScreenRight>
+        </SplitScreen>
+      </FiltersProvider>
     </div>
   );
 }

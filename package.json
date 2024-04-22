@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": {
+    "name": "Oleg Plevan",
+    "email": "oleg.plevan@gmail.com",
+    "url": "https://www.linkedin.com/in/oleg-plevan/"
+  },
   "dependencies": {
     "concurrently": "^8.2.2"
   },
@@ -15,6 +20,5 @@
     "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
-  "author": "",
   "license": "ISC"
 }

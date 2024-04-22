@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders header correctly 1`] = `
+<div>
+  <div
+    class="py-3 shadow-md mb-4 lg:mb-10"
+  >
+    <nav
+      class="container flex gap-4"
+    >
+      <a
+        class="hover:text-blue-700 hover:underline"
+        href="/"
+      >
+        Home
+      </a>
+    </nav>
+  </div>
+</div>
+`;

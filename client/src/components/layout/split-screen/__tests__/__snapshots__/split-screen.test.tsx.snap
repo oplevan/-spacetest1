@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SplitScreen component matches the snapshot 1`] = `
+<div>
+  <div
+    class="container grid lg:grid-cols-4"
+    data-testid="split-screen-container"
+  >
+    <div
+      class="lg:col-span-1"
+    >
+      Left
+    </div>
+    <div
+      class="lg:col-span-3"
+    >
+      Right
+    </div>
+  </div>
+</div>
+`;
